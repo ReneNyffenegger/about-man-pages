@@ -1,0 +1,44 @@
+.\"      Setting the title
+.\"      =================
+.\"
+.\"      The first command in a man page should set the man page's title
+.\"      with the .TH macro.
+.\"
+.\"      .TH takes between 2 and 5 arguments:
+.\"         - title of the man page (usually written in uppercase letters)
+.\"         - the man page section number
+.\"         - the date of the last non trivial change of the man page  (YYYY-MM-DD)
+.\"         - the source of the command (for example »GNU« or »Linux«)
+.\"         - the title of the manual (for example »Linux Programmer's Manual«)
+.\"
+.TH  "Man page structure" 1 "2018-11-20" tq84 "about man pages"
+.\"
+.\"      Sections
+.\"      ========
+.\"
+.\"      A man page is structured into sections (macro .SH) and
+.\"      sub-sections (macro .SS).
+.\"
+.\"      The section NAME is mandatory.
+.\"      At least SYNOPSIS, DESCRIPTION and SEE ALSO should at least be used.
+.\"      Others, such as OPTIONS, FILES, NOTES, BUGS etc. are
+.\"      additionally suggested.
+.\"
+.SH NAME
+.\" ====
+man-page-structure \- Name is the only required section and it needs a backslash followed by a hyphen.
+
+.SH SYNOPSIS
+.\" ========
+This section contains a brief summary.
+
+.SH DESCRIPTION
+.\" ===========
+This section explains what the thing described in the man-page actually does.
+
+.SH SEE ALSO
+.\" ========
+.BR man (7),
+.BR man-pages (7)
+
+.\" vim: ft=nroff
