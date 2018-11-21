@@ -1,0 +1,9 @@
+line one
+\" This comment is removed, BUT the new line is not.
+line two
+
+line three
+.\" The dot is interpreted as undefined request and the entire line is removed.
+line four
+
+.\" vim: ft=nroff
